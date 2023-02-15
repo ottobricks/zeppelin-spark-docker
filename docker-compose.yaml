@@ -1,0 +1,10 @@
+version: "2"
+services:
+  zeppelin:
+    image: zeppelin-spark
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: zeppelin
+    ports:
+      - "8083:8080"
